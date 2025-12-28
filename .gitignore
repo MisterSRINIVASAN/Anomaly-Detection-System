@@ -1,0 +1,18 @@
+# Backend
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.env
+yolov8n.pt
+
+# Frontend
+node_modules/
+dist/
+build/
+.npm/
+
+# OS
+.DS_Store
+Thumbs.db

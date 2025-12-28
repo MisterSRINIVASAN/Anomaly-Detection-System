@@ -27,8 +27,9 @@ if %errorlevel% neq 0 (
 
 echo.
 echo [2] Starting FastAPI Backend on Port 8000...
-:: Start from backend directory directly
-start "Anomaly Backend" cmd /k "title Anomaly Backend && call venv\Scripts\activate && uvicorn main:app --reload --port 8000"
+:: Start from backend directory directly using python -m uvicorn for better reliability
+start "Anomaly Backend" cmd /k "title Anomaly Backend && call venv\Scripts\activate && python -m uvicorn main:app --reload --port 8000"
+
 
 echo.
 echo [3] Setting up React Frontend...
